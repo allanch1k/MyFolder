@@ -43,10 +43,8 @@ http.createServer(function (request, response) {
             });
         }
         else {
-            //fs.readFile('./error.html', function(error, content) );
-			//response.writeHead(404);
-			response.statusCode = 404;
-            response.end();
+			response.writeHead(404 , { 'Content-Type': contentType });
+            response.end("Page '" + request.url + "' not found!");
         }
     });
      
