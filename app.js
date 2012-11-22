@@ -1,4 +1,5 @@
-var http = require('http'),
+var 
+	http = require('http'),
     controller = require('./controller'),
     model = require('./model');
 
